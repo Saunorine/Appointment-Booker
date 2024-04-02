@@ -6,6 +6,6 @@ Final for CISC 191. Java application to hold and make appointments for a hypothe
 blah blah blah
 
 ### Requirements:
-1. System will run
-2. Code will not
+1. **System will run**
+2. ~~Code will not~~
 3. Runs on Java
