@@ -11,3 +11,4 @@ blah blah blah
 3. Runs on Java
 
 ## Week 1:
+week 1 plans
