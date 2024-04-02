@@ -9,3 +9,5 @@ blah blah blah
 1. **System will run**
 2. ~~Code will not~~
 3. Runs on Java
+
+## Week 1:
