@@ -1,6 +1,8 @@
 # Appointment-Booker
 ## Description:
-Java application for the user to make appointments for predetermined courses with set times and dates. Written and collaborated by Zhanhang Xiao and Fermin Garduno
+Java application for the user to make appointments for predetermined courses with set times and dates.
+
+Written and collaborated by Zhanhang Xiao and Fermin Garduno
 
 ### Purpose:
 A program that could schedule workout courses for a local gym. Add courses that could be written as a class with a course name, trainer name, cost, date, time, intensity, and courseSize. Then user could use the calender GUI to navigate available courses and click on them to book. Their information they logged in with would be added to the course as a member.
