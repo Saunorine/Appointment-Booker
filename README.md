@@ -9,11 +9,12 @@ A program that could schedule workout courses for a local gym. Add courses that 
 1. GUI that user can use to login and view their own courses or sign up for new ones
 2. Can click on elements and sort everything based on that (sort by closest/furthest appointment dates)
 3. Add appointments and return errors if times overlap for same trainer/off days
-4. Maybe make overall GUI just a calender with a list view option (staff view)
-5. Send email about the appointment to user after booking
 
 ### Ideas:
 see if we can use google calender itself as the gui
+reschedule appointments after being made
+send email notifying about the appointment after booking
+GUI will be different depending on user or staff login
 
 ## Week 1:
 Do CRC cards for the project
