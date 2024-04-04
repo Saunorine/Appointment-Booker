@@ -12,8 +12,7 @@ A program that could schedule gym courses and organize it to.
 4. Maybe make overall GUI just a calender with a list view option (staff view)
 
 ### Ideas
-maybe sync to google calender when created
-
+maybe sync to google calender when appointment created
 
 ## Week 1:
 Do CRC cards for the project.
