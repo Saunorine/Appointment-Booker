@@ -11,10 +11,10 @@ A program that could schedule workout courses for a local gym. Add courses that 
 3. Add appointments and return errors if times overlap for same trainer/off days
 
 ### Ideas:
-*see if we can use google calender itself as the gui
-*reschedule appointments after being made
-*send email notifying about the appointment after booking
-*GUI will be different depending on user or staff login
+..*see if we can use google calender itself as the gui
+..*reschedule appointments after being made
+..*send email notifying about the appointment after booking
+..*GUI will be different depending on user or staff login
 
 ## Week 1:
 Do CRC cards for the project
