@@ -8,15 +8,15 @@ Written and collaborated by Zhanhang Xiao and Fermin Garduno
 A program that could schedule workout courses for a local gym. Add courses that could be written as a class with a course name, trainer name, cost, date, time, intensity, and courseSize. Then user could use the calender GUI to navigate available courses and click on them to book. Their information they logged in with would be added to the course as a member.
 
 ### Requirements:
-1. GUI that user can use to login and view their own courses or sign up for new ones
-2. Can click on elements and sort everything based on that (sort by closest/furthest appointment dates)
+1. An interface that the user uses to login and select courses to sign up for
+2. Can sort available appointments by price/trainer etc
 3. Add appointments and return errors if times overlap for same trainer/off days
 
 ### Ideas:
-  * see if we can use google calender itself as the gui
+  * see if we can somehow integrate google calendar
   * reschedule appointments after being made
   * send email notifying about the appointment after booking
-  * GUI will be different depending on user or staff login
+  * Interface will be different depending on user or staff login
 
 ## Week 1:
 Do CRC cards for the project
@@ -24,3 +24,5 @@ Do CRC cards for the project
 List requirements
 
 Look for ways to implements learning outcomes
+
+Plan out the inner workings
