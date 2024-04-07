@@ -10,7 +10,8 @@ A program that could schedule workout courses for a local gym. Add courses that 
 ### Requirements:
 1. An interface that the user uses to login and select courses to sign up for
 2. Can sort available appointments by price/trainer etc
-3. Add appointments and return errors if times overlap for same trainer/off days
+3. Add new staff appointments
+4. Return errors if needed
 
 ### Ideas:
   * see if we can somehow integrate google calendar
