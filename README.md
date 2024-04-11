@@ -8,7 +8,7 @@ Written and collaborated by Zhanhang Xiao and Fermin Garduno
 A program that could schedule workout courses for a local gym. Add courses that could be written as a class with a course name, trainer name, cost, date, time, intensity, and courseSize. Then user could use the interface to navigate courses and sort through them. Their information they logged in with would be then be added to the course member list for the staff to look at.
 
 ### Requirements:
-1. An interface that the gym member uses to login and select courses to sign up for
+1. A GUI that the gym member uses to login and select courses to sign up for
 2. Can sort available appointments by price/trainer etc
 3. Add new staff appointments
 4. Return errors if needed
@@ -17,7 +17,7 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * see if we can somehow integrate google calendar
   * reschedule appointments after being made
   * send email notifying about the appointment after booking
-  * Interface will be different depending on user or staff login
+  * GUI will be different depending on user or staff login
 
 ## Week 1:
 Do CRC cards for the project
