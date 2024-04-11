@@ -27,3 +27,6 @@ List requirements
 Look for ways to implements learning outcomes
 
 Plan out the inner workings
+
+## Week 2:
+write course class, account/user info class, test cases
