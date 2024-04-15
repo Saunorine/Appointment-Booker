@@ -30,3 +30,7 @@ Plan out the inner workings
 
 ## Week 2:
 write course class, account/user info class, test cases
+
+## Week 3:
+Finish up writing the classes.
+Finished the UML
