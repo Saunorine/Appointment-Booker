@@ -32,5 +32,4 @@ Plan out the inner workings
 write course class, account/user info class, test cases
 
 ## Week 3:
-Finish up writing the classes.
-Finished the UML
+Finish up writing the classes and junit tests.
