@@ -4,8 +4,9 @@ public class Accounts
 {
 	private String name;
 	private String password;
-	//private int age;
 	private String contactInfo;
+	private ArrayList<String> coursesEnrolledIn = new ArrayList<String>();
+	private int numOfCourses = coursesEnrolledIn.size();
 	
 	//Default values
 	public Accounts() {
@@ -14,20 +15,21 @@ public class Accounts
 		contactInfo = "Needs contact info";
 	}
 	
-	public String setName() {
-		return this.name = name;
+	public void setName(String userName) {
+		this.name = userName;
 	}
 	public String getName() {
-		return name;
+		return this.name = name;
 	}
 	
-	public String setPassword() {
-		return this.password = password;
+	public void setPassword(String userPass) {
+		this.password = userPass;
 	}
 	
-	public String setContact() {
-		return this.contactInfo = contactInfo;
+	public void setContact(String info) {
+		this.contactInfo = info;
 	}
+	
 	public String getContact() {
 		return contactInfo;
 	}
