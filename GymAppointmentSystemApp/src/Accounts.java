@@ -2,8 +2,6 @@
 public class Accounts
 {
 	private String name;
-	//private int age;
-	//If false then is a member acc
 	private boolean isStaff;
 	private String contactInfo;
 	
