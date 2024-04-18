@@ -18,8 +18,9 @@ public class Accounts
 	public void setName(String userName) {
 		this.name = userName;
 	}
+	
 	public String getName() {
-		return this.name = name;
+		return name;
 	}
 	
 	public void setPassword(String userPass) {
@@ -34,5 +35,11 @@ public class Accounts
 		return contactInfo;
 	}
 	
+	public void addCourse(String courseID) {
+		coursesEnrolledIn.add(courseID);
+	}
 	
+	public ArrayList<String> getCourses() {
+		return coursesEnrolledIn;
+	}
 }
