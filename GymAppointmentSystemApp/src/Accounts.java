@@ -8,27 +8,14 @@ public class Accounts
 	private ArrayList<String> coursesEnrolledIn = new ArrayList<String>();
 	private int numOfCourses = coursesEnrolledIn.size();
 	
-	//Default values
-	public Accounts() {
-		name = "Fill name";
-		password = "Set password";
-		contactInfo = "Needs contact info";
-	}
-	
-	public void setName(String userName) {
+	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
+		this.password = userPass;
+		this.contactInfo = info;
 	}
 	
 	public String getName() {
 		return name;
-	}
-	
-	public void setPassword(String userPass) {
-		this.password = userPass;
-	}
-	
-	public void setContact(String info) {
-		this.contactInfo = info;
 	}
 	
 	public String getContact() {
@@ -41,5 +28,11 @@ public class Accounts
 	
 	public ArrayList<String> getCourses() {
 		return coursesEnrolledIn;
+	}
+	
+	public String getInformation() {
+		String listOfInfo = "Name: " + name + ". Password: " + password + ". Other info: " + contactInfo;
+		
+		return listOfInfo;
 	}
 }
