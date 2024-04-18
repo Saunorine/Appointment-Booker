@@ -2,7 +2,7 @@
 ## Description:
 Java application for the user to make appointments for predetermined courses with set times and dates.
 
-Written and collaborated by Zhanhang Xiao and Fermin Garduno
+Written and collaborated by Zhanhang Xiao and Fermin Garduno (https://github.com/FerminGarduno).
 
 ### Purpose:
 A program that could schedule workout courses for a local gym. Add courses that could be written as a class with a course name, trainer name, cost, date, time, intensity, and courseSize. Then user could use the interface to navigate courses and sort through them. Their information they logged in with would be then be added to the course member list for the staff to look at.
