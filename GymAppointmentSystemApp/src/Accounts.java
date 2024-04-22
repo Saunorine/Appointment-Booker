@@ -30,6 +30,10 @@ public class Accounts
 		return coursesEnrolledIn;
 	}
 	
+	public int getNumberOfCourses() {
+		return numOfCourses;
+	}
+	
 	public String getInformation() {
 		String listOfInfo = "Name: " + name + ". Password: " + password + ". Other info: " + contactInfo;
 		

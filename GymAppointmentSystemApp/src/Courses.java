@@ -37,4 +37,10 @@ public class Courses
 	{
 		return courseTime;
 	}
+	
+	public String getInformation() {
+		String listOfInfo = "Name: " + courseName + ". Description: " + courseInfo + ". Date: " + courseDate + ". Time:" + courseTime;
+		
+		return listOfInfo;
+	}
 }
