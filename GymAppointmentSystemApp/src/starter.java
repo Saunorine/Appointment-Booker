@@ -8,7 +8,7 @@ public class starter
 		
 		System.out.println(account1.getInformation());
 		
-		Courses course1 = new Courses("Beginner's Cardio", "Cardio class for starters", "March 22, 2024", "1500");
+		Courses course1 = new Courses("Beginner's Cardio", "Cardio class for starters", "March 22, 2024", "15:30");
 		
 		System.out.println(course1.getInformation());
 	}
