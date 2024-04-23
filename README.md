@@ -33,3 +33,6 @@ write course class, account/user info class, test cases
 
 ## Week 3:
 Finish up writing the classes and junit tests.
+
+## Week 4: 
+Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism. 
