@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Courses
 {
@@ -5,6 +6,7 @@ public class Courses
 	public String courseInfo;
 	public String courseDate;
 	public String courseTime;
+	private ArrayList<Courses> listOfAccounts = new ArrayList<Courses>();
 	
 	//constructor
 	public Courses (String courseName, String courseInfo, String courseDate, String courseTime)

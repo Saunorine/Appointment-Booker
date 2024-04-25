@@ -5,7 +5,7 @@ public class Accounts
 	private String name;
 	private String password;
 	private String contactInfo;
-	private ArrayList<String> coursesEnrolledIn = new ArrayList<String>();
+	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
 	private int numOfCourses = coursesEnrolledIn.size();
 	
 	public Accounts(String userName, String userPass, String info) {
@@ -22,11 +22,11 @@ public class Accounts
 		return contactInfo;
 	}
 	
-	public void addCourse(String courseID) {
+	public void addCourse(Courses courseID) {
 		coursesEnrolledIn.add(courseID);
 	}
 	
-	public ArrayList<String> getCourses() {
+	public ArrayList<Courses> getCourses() {
 		return coursesEnrolledIn;
 	}
 	
