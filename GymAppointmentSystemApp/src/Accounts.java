@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Accounts
 {
-	private String name;
-	private String password;
-	private String contactInfo;
-	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
-	private int numOfCourses = coursesEnrolledIn.size();
+	public String name;
+	public String password;
+	public String contactInfo;
+	public ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
+	public int numOfCourses = coursesEnrolledIn.size();
 	
 	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
@@ -34,8 +34,8 @@ public class Accounts
 		coursesEnrolledIn.add(objectName);
 	}
 	
-	public ArrayList<Courses> getCourseList() {
-		return coursesEnrolledIn;
+	public String getCourseList() {
+		return coursesEnrolledIn.toString();
 	}
 	
 	public String getInformation() {

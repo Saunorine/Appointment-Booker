@@ -21,6 +21,7 @@ class courseTests
 
 	@Test
 	void testRemoveCourse() {
+		Accounts testAcc2 = new Accounts("Zhang", "533", "zxzhanhang@gmail.com");
 		Courses testCourse2 = new Courses("Intermediate Cardio", "Step up above beginners", "March 24,2024", "09:30");
 		
 		

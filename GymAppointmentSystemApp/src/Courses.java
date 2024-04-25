@@ -8,7 +8,7 @@ public class Courses
 	public String courseTime;
 	
 	//Not used not sure if even needed
-	private ArrayList<Courses> listOfAccounts = new ArrayList<Courses>();
+	private ArrayList<Accounts> listOfAccounts = new ArrayList<Accounts>();
 	
 	//constructor
 	public Courses (String courseName, String courseInfo, String courseDate, String courseTime)
@@ -17,7 +17,6 @@ public class Courses
 		this.courseInfo = courseInfo;
 		this.courseDate = courseDate;
 		this.courseTime = courseTime;
-		
 	}
 	
 	public String getName()
