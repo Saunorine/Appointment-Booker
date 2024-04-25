@@ -18,20 +18,24 @@ public class Accounts
 		return name;
 	}
 	
+	public String getPassword() {
+		return password;
+	}
+	
 	public String getContact() {
 		return contactInfo;
+	}
+	
+	public int getNumberOfCourses() {
+		return numOfCourses;
 	}
 	
 	public void addCourse(Courses courseID) {
 		coursesEnrolledIn.add(courseID);
 	}
 	
-	public ArrayList<Courses> getCourses() {
+	public ArrayList<Courses> getCourseList() {
 		return coursesEnrolledIn;
-	}
-	
-	public int getNumberOfCourses() {
-		return numOfCourses;
 	}
 	
 	public String getInformation() {
