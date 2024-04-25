@@ -30,8 +30,8 @@ public class Accounts
 		return numOfCourses;
 	}
 	
-	public void addCourse(Courses courseID) {
-		coursesEnrolledIn.add(courseID);
+	public void addCourse(Courses objectName) {
+		coursesEnrolledIn.add(objectName);
 	}
 	
 	public ArrayList<Courses> getCourseList() {

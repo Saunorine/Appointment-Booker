@@ -6,6 +6,8 @@ public class Courses
 	public String courseInfo;
 	public String courseDate;
 	public String courseTime;
+	
+	//Not used not sure if even needed
 	private ArrayList<Courses> listOfAccounts = new ArrayList<Courses>();
 	
 	//constructor
