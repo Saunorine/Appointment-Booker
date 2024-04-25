@@ -23,6 +23,8 @@ class arrayTests
 		//Add created course to created account
 		testAccount1.addCourse(testCourse1);
 		
+		//Should be 1 but not, tried printing testAccount1.getCourseList() for entire
+		//Course list of testAccount1 but returned "[Courses@515f550a]"
 		assertEquals(1, testAccount1.getNumberOfCourses());
 	}
 }
