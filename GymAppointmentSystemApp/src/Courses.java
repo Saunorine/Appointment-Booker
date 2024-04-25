@@ -18,8 +18,6 @@ public class Courses
 		
 	}
 	
-	
-	
 	public String getName()
 	{
 		return courseName;
@@ -41,7 +39,7 @@ public class Courses
 	}
 	
 	public String getInformation() {
-		String listOfInfo = "Name: " + courseName + ". Description: " + courseInfo + ". Date: " + courseDate + ". Time:" + courseTime;
+		String listOfInfo = "Name: " + this.getName() + ". Description: " + this.getCourseInfo() + ". Date: " + this.getCourseDate() + ". Time: " + this.getCourseTime();
 		
 		return listOfInfo;
 	}
