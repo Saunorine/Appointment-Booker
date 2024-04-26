@@ -25,6 +25,7 @@ class arrayTests
 		courseDescription = "Cardio class for starters";
 		courseDate = "March 25, 2024";
 		courseTime = "11:30";
+		
 		//Create course 2
 		Courses testCourse2 = new Courses(courseName, courseDescription, courseDate, courseTime);
 		

@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Accounts
 {
-	public String name;
-	public String password;
-	public String contactInfo;
-	public ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
-	public int numOfCourses;
+	private String name;
+	private String password;
+	private String contactInfo;
+	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
+	private int numOfCourses;
 	
 	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
@@ -36,8 +36,16 @@ public class Accounts
 		coursesEnrolledIn.add(objectName);
 	}
 	
-	public String getCourseList() {
-		return coursesEnrolledIn.toString();
+	public void removeCourse(Courses objectName) {
+		for(Courses element: coursesEnrolledIn) {
+			if(element == objectName) {
+				coursesEnrolledIn.remove(objectName);
+			}
+		}
+	}
+	
+	public ArrayList<Courses> getCourseList() {
+		return coursesEnrolledIn;
 	}
 	
 	public String getInformation() {
