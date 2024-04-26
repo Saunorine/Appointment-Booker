@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class arrayTests
 {
 	@Test
-	void test()
+	void testAddCourseToAcc()
 	{
 		//Create account
 		String accName = "Fermin";
@@ -36,5 +36,10 @@ class arrayTests
 		//Add 2nd course to account 1, should be 2 now
 		testAccount1.addCourse(testCourse2);
 		assertEquals(2, testAccount1.getNumberOfCourses());
+	}
+	
+	@Test
+	void testRemoveCourseFromAcc() {
+		
 	}
 }
