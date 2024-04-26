@@ -6,7 +6,7 @@ public class Accounts
 	public String password;
 	public String contactInfo;
 	public ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
-	public int numOfCourses = coursesEnrolledIn.size();
+	public int numOfCourses;
 	
 	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
@@ -27,6 +27,8 @@ public class Accounts
 	}
 	
 	public int getNumberOfCourses() {
+		numOfCourses = coursesEnrolledIn.size();
+		
 		return numOfCourses;
 	}
 	
