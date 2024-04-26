@@ -26,13 +26,12 @@ public class starter
 		Courses testCourse2 = new Courses(courseName, courseDescription, courseDate, courseTime);
 		
 		testAccount1.addCourse(testCourse1);
-		
 		System.out.println(testAccount1.getNumberOfCourses());
 		
 		testAccount1.addCourse(testCourse2);
-		System.out.println("Courses on Account: " + String.join(", ", testAccount1.getCourseList().toString()));
+		System.out.println("Courses on Account: " + String.join(", ", testAccount1.getCourseList()));
 		
 		testAccount1.removeCourse(testCourse1);
-		System.out.println("Courses on Account after remove: " + String.join(", ", testAccount1.getCourseList().toString()));
+		System.out.println("Courses on Account after remove: " + String.join(", ", testAccount1.getCourseList()));
 	}
 }

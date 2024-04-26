@@ -5,8 +5,9 @@ public class Accounts
 	private String name;
 	private String password;
 	private String contactInfo;
-	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
 	private int numOfCourses;
+	
+	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
 	
 	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
@@ -32,20 +33,16 @@ public class Accounts
 		return numOfCourses;
 	}
 	
+	public String getCourseList() {
+		return coursesEnrolledIn.toString();
+	}
+	
 	public void addCourse(Courses objectName) {
 		coursesEnrolledIn.add(objectName);
 	}
 	
 	public void removeCourse(Courses objectName) {
-		for(Courses element: coursesEnrolledIn) {
-			if(element == objectName) {
-				coursesEnrolledIn.remove(objectName);
-			}
-		}
-	}
-	
-	public ArrayList<Courses> getCourseList() {
-		return coursesEnrolledIn;
+		coursesEnrolledIn.remove(objectName);
 	}
 	
 	public String getInformation() {

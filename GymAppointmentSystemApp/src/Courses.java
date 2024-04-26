@@ -2,10 +2,12 @@ import java.util.ArrayList;
 
 public class Courses
 {
-	public String courseName;
-	public String courseInfo;
-	public String courseDate;
-	public String courseTime;
+	private String courseName;
+	private String courseInfo;
+	private String courseDate;
+	private String courseTime;
+	//Leave this in to use later
+	private String courseInstructor;
 	
 	//Not used not sure if even needed
 	private ArrayList<Accounts> listOfAccounts = new ArrayList<Accounts>();
@@ -38,6 +40,13 @@ public class Courses
 	public String getCourseTime()
 	{
 		return courseTime;
+	}
+	
+	public int getNumberOfMembers() {
+		//Minus 1 because there will always be a staff in it
+		numOfMembers = listOfAccounts.size() - 1;
+		
+		return numOfMembers;
 	}
 	
 	public String getInformation() {
