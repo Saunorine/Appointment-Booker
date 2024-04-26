@@ -9,6 +9,7 @@ public class Courses
 	
 	//Not used not sure if even needed
 	private ArrayList<Accounts> listOfAccounts = new ArrayList<Accounts>();
+	private int numOfMembers;
 	
 	//constructor
 	public Courses (String courseName, String courseInfo, String courseDate, String courseTime)
