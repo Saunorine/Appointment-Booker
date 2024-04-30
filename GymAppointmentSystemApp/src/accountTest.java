@@ -21,31 +21,14 @@ class accountTest {
 	}
 
 	@Test
-	void testAddCourseAndGetCourse()
+	void testGetInfoAccount()
 	{
-		//creating an Account Object to work with
-		Accounts joeAccount = new Accounts("Joe", "password321", "joe123@gmail.com");
+		String name = "User 01";
+		String password = "123";
+		String contactInfo = "858-155-1332";
+		Accounts testAcc1 = new Accounts(name, password, contactInfo);
+		String output =  "Name: User 01. Password: 123. Other info: 858-155-1332";
 		
-		//checking the initial size of coursesEnrolledin
-		assertEquals(0, joeAccount.getCourses().size());	
-		
-		//Our test courses
-		String course1 = "personal training";
-		String course2 = "yoga class";
-		
-		//testing addCourses
-		joeAccount.addCourse(course1); 
-		joeAccount.addCourse(course2);
-		
-		//testing getCourses
-		//created ArrayList 
-		ArrayList<String> expectedCourses = new ArrayList<>(); 
-		expectedCourses.add(course1);
-		expectedCourses.add(course2);
-		//when we test it, joeAccount and expectedCourses should have the same course ID
-		assertEquals(expectedCourses, joeAccount.getCourses());
-		
-		
-		
+		assertEquals(output, testAcc1.getInformation());
 	}
 }

@@ -1,10 +1,17 @@
+import java.util.ArrayList;
 
 public class Courses
 {
-	public String courseName;
-	public String courseInfo;
-	public String courseDate;
-	public String courseTime;
+	private String courseName;
+	private String courseInfo;
+	private String courseDate;
+	private String courseTime;
+	//Leave this in to use later
+	private String courseInstructor;
+	
+	//Not used not sure if even needed
+	private ArrayList<Accounts> listOfAccounts = new ArrayList<Accounts>();
+	private int numOfMembers;
 	
 	//constructor
 	public Courses (String courseName, String courseInfo, String courseDate, String courseTime)
@@ -13,10 +20,7 @@ public class Courses
 		this.courseInfo = courseInfo;
 		this.courseDate = courseDate;
 		this.courseTime = courseTime;
-		
 	}
-	
-	
 	
 	public String getName()
 	{
@@ -38,8 +42,15 @@ public class Courses
 		return courseTime;
 	}
 	
+	public int getNumberOfMembers() {
+		//Minus 1 because there will always be a staff in it
+		numOfMembers = listOfAccounts.size() - 1;
+		
+		return numOfMembers;
+	}
+	
 	public String getInformation() {
-		String listOfInfo = "Name: " + courseName + ". Description: " + courseInfo + ". Date: " + courseDate + ". Time:" + courseTime;
+		String listOfInfo = "Name: " + this.getName() + ". Description: " + this.getCourseInfo() + ". Date: " + this.getCourseDate() + ". Time: " + this.getCourseTime();
 		
 		return listOfInfo;
 	}

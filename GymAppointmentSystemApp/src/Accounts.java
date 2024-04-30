@@ -5,8 +5,9 @@ public class Accounts
 	private String name;
 	private String password;
 	private String contactInfo;
-	private ArrayList<String> coursesEnrolledIn = new ArrayList<String>();
-	private int numOfCourses = coursesEnrolledIn.size();
+	private int numOfCourses;
+	
+	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
 	
 	public Accounts(String userName, String userPass, String info) {
 		this.name = userName;
@@ -18,20 +19,30 @@ public class Accounts
 		return name;
 	}
 	
+	public String getPassword() {
+		return password;
+	}
+	
 	public String getContact() {
 		return contactInfo;
 	}
 	
-	public void addCourse(String courseID) {
-		coursesEnrolledIn.add(courseID);
-	}
-	
-	public ArrayList<String> getCourses() {
-		return coursesEnrolledIn;
-	}
-	
 	public int getNumberOfCourses() {
+		numOfCourses = coursesEnrolledIn.size();
+		
 		return numOfCourses;
+	}
+	
+	public String getCourseList() {
+		return coursesEnrolledIn.toString();
+	}
+	
+	public void addCourse(Courses objectName) {
+		coursesEnrolledIn.add(objectName);
+	}
+	
+	public void removeCourse(Courses objectName) {
+		coursesEnrolledIn.remove(objectName);
 	}
 	
 	public String getInformation() {

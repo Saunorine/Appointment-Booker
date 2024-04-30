@@ -1,8 +1,11 @@
+import static org.junit.jupiter.api.Assertions.*;
 
-public class starter
+import org.junit.jupiter.api.Test;
+
+class arrayTests
 {
-
-	public static void main(String[] args)
+	@Test
+	void testAddCourseToAcc()
 	{
 		//Create account
 		String accName = "Fermin";
@@ -17,6 +20,7 @@ public class starter
 		String courseTime = "15:30";
 		Courses testCourse1 = new Courses(courseName, courseDescription, courseDate, courseTime);
 		
+		//Change to details of 2nd course
 		courseName = "Beginner's Cardio 2";
 		courseDescription = "Cardio class for starters";
 		courseDate = "March 25, 2024";
@@ -25,13 +29,17 @@ public class starter
 		//Create course 2
 		Courses testCourse2 = new Courses(courseName, courseDescription, courseDate, courseTime);
 		
+		//Add created course to created account
 		testAccount1.addCourse(testCourse1);
-		System.out.println(testAccount1.getNumberOfCourses());
+		assertEquals(1, testAccount1.getNumberOfCourses());
 		
+		//Add 2nd course to account 1, should be 2 now
 		testAccount1.addCourse(testCourse2);
-		System.out.println("Courses on Account: " + String.join(", ", testAccount1.getCourseList()));
+		assertEquals(2, testAccount1.getNumberOfCourses());
+	}
+	
+	@Test
+	void testRemoveCourseFromAcc() {
 		
-		testAccount1.removeCourse(testCourse1);
-		System.out.println("Courses on Account after remove: " + String.join(", ", testAccount1.getCourseList()));
 	}
 }
