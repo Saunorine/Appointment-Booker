@@ -6,6 +6,8 @@ public class Courses
 	private String courseInfo;
 	private String courseDate;
 	private String courseTime;
+	private int maxOccupant;
+	
 	//Leave this in to use later
 	private String courseInstructor;
 	
@@ -20,6 +22,7 @@ public class Courses
 		this.courseInfo = courseInfo;
 		this.courseDate = courseDate;
 		this.courseTime = courseTime;
+		this.maxOccupant = 8;
 	}
 	
 	public String getName()
