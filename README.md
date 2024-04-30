@@ -36,3 +36,6 @@ Finish up writing the classes and junit tests.
 
 ## Week 4: 
 Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism. 
+
+## Week 5:
+Zhanhang is going to work on the GUI assignment and try to the beginning of the program. Fermin should write up the sorting methods for sorting courses by time/date/alphabetical etc. Continue looking for ways to implement learning outcomes.
