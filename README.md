@@ -17,7 +17,7 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * Design principles of object-oriented programming ✓ - Created 2 objects that will work together to create the program
   * Single and multidimensional arrays ✓ - ArrayLists for Course and Accounts
   * Uses objects and classes in object-oriented programming (including aggregation?)
-  * Inheritance and polymorphism, includin abstract classes and interfaces - Need inheritance and abstract classes and interfaces
+  * Inheritance and polymorphism, includin abstract classes and interfaces - Need abstract and interfaces, inheritance will be done with Swing/GUI
   * Generic collections and data structures ✓ - Using ArrayLists to hold objects of Courses for an Account object
   * GUI utilizing event-driven programming
   * Construct programs utilizing exception handling
