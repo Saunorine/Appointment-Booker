@@ -1,37 +1,39 @@
-
-public class starter
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
+import javax.swing.*;
+ 
+public class starter extends JFrame
 {
 
 	public static void main(String[] args)
 	{
-		//Create account
-		String accName = "Fermin";
-		String accPassword = "mesa123";
-		String accContactInfo = "fermin@gmail.com";
-		Accounts testAccount1 = new Accounts(accName, accPassword, accContactInfo);
 		
-		//Create course
-		String courseName = "Beginner's Cardio";
-		String courseDescription = "Cardio class for starters";
-		String courseDate = "March 22, 2024";
-		String courseTime = "15:30";
-		Courses testCourse1 = new Courses(courseName, courseDescription, courseDate, courseTime);
+		JFrame frame1 = new JFrame("Garduno's Special App");
+		frame1.setSize(750, 500);
 		
-		courseName = "Beginner's Cardio 2";
-		courseDescription = "Cardio class for starters";
-		courseDate = "March 25, 2024";
-		courseTime = "11:30";
+		JLabel logo = new JLabel("Welcome to Garduno's Gym. Login below");
+		logo.setBounds(250, 10, 300, 180);
+		frame1.add(logo);
 		
-		//Create course 2
-		Courses testCourse2 = new Courses(courseName, courseDescription, courseDate, courseTime);
+		JLabel user = new JLabel("Member ID:");
+		user.setBounds(180, 150, 75, 30);
+		frame1.add(user);
 		
-		testAccount1.addCourse(testCourse1);
-		System.out.println(testAccount1.getNumberOfCourses());
+		JLabel pass = new JLabel("Password:");
+		pass.setBounds(180, 200, 75, 30);
+		frame1.add(pass);
 		
-		testAccount1.addCourse(testCourse2);
-		System.out.println("Courses on Account: " + String.join(", ", testAccount1.getCourseList()));
+		JButton loginButton = new JButton("Login");
+		loginButton.setBounds(340, 400, 65, 20);
+		frame1.add(loginButton);
+		loginButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Login clicked!");
+			}
+		});
 		
-		testAccount1.removeCourse(testCourse1);
-		System.out.println("Courses on Account after remove: " + String.join(", ", testAccount1.getCourseList()));
+		frame1.setLayout(null);
+		frame1.setVisible(true);
 	}
 }
