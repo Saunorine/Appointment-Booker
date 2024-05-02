@@ -25,7 +25,7 @@ public class Courses
 		this.maxOccupant = 8;
 	}
 	
-	public String getName()
+	public String getCourseName()
 	{
 		return courseName;
 	}
@@ -53,7 +53,7 @@ public class Courses
 	}
 	
 	public String getInformation() {
-		String listOfInfo = "Name: " + this.getName() + ". Description: " + this.getCourseInfo() + ". Date: " + this.getCourseDate() + ". Time: " + this.getCourseTime();
+		String listOfInfo = "Name: " + this.getCourseName() + ". Description: " + this.getCourseInfo() + ". Date: " + this.getCourseDate() + ". Time: " + this.getCourseTime();
 		
 		return listOfInfo;
 	}

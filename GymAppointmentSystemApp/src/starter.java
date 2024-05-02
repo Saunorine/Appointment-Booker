@@ -1,13 +1,18 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.ArrayList;
+
 import javax.swing.*;
  
 public class starter extends JFrame
 {
-
 	public static void main(String[] args)
 	{
+		ArrayList<Accounts> createdAccounts = new ArrayList<Accounts>();
+		
+		Accounts testAcc1 = new Accounts("Zhanhang", "123", "no info");
+		createdAccounts.add(testAcc1);
 		
 		JFrame frame1 = new JFrame("Garduno's Special App");
 		frame1.setSize(750, 500);
@@ -20,16 +25,37 @@ public class starter extends JFrame
 		user.setBounds(180, 150, 75, 30);
 		frame1.add(user);
 		
+		JTextField userNameInput = new JTextField(10);
+		userNameInput.setBounds(260, 150, 200, 30);
+		frame1.add(userNameInput);
+		
 		JLabel pass = new JLabel("Password:");
 		pass.setBounds(180, 200, 75, 30);
 		frame1.add(pass);
+		
+		JTextField userPassInput = new JTextField(10);
+		userPassInput.setBounds(260, 200, 200, 30);
+		frame1.add(userPassInput);
 		
 		JButton loginButton = new JButton("Login");
 		loginButton.setBounds(340, 400, 65, 20);
 		frame1.add(loginButton);
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Login clicked!");
+				String userName = userNameInput.getText();
+				String userPass = userPassInput.getText();
+				
+				for(Accounts elements : createdAccounts) {
+					System.out.println(elements.getName() + elements.getPassword());
+					System.out.println(userName + userPass + "User input");
+					
+					if(elements.getName() == userName && elements.getPassword() == userPass) {
+						JOptionPane.showMessageDialog(frame1, "You are in");
+					}
+					else{
+						JOptionPane.showMessageDialog(frame1, "Invalid");
+					}
+				}
 			}
 		});
 		
