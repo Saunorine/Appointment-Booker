@@ -40,15 +40,19 @@ public class starter extends JFrame
 		JButton loginButton = new JButton("Login");
 		loginButton.setBounds(340, 400, 65, 20);
 		frame1.add(loginButton);
+		//Logic for login button
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String userName = userNameInput.getText();
 				String userPass = userPassInput.getText();
 				
 				for(Accounts elements : createdAccounts) {
+					//Prints what is in the ArrayList
 					System.out.println(elements.getName() + elements.getPassword());
+					//Prints what the user typed
 					System.out.println(userName + userPass + "User input");
 					
+					//Compares arrayList values to user input values
 					if(elements.getName() == userName && elements.getPassword() == userPass) {
 						JOptionPane.showMessageDialog(frame1, "You are in");
 					}
