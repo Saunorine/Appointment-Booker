@@ -36,7 +36,7 @@ public class CreateAccountPage extends JFrame {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
             // Create a new account object
-            Account newAccount = new Account(username, password, "");
+            Account newAccount = new Account(username, password);
             // Add the new account to the listOfAccounts
             listOfAccounts.add(newAccount);
             // Close current screen

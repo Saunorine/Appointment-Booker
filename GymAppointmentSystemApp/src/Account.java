@@ -9,10 +9,10 @@ public class Account
 	
 	private ArrayList<Course> coursesEnrolledIn = new ArrayList<Course>();
 	
-	public Account(String userName, String userPass, String info) {
+	public Account(String userName, String userPass) {
 		this.name = userName;
 		this.password = userPass;
-		this.contactInfo = info;
+		//this.contactInfo = info;
 	}
 	
 	public String getName() {

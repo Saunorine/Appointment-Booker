@@ -57,4 +57,9 @@ public class Course
 		
 		return listOfInfo;
 	}
+	
+	@Override
+    public String toString() {
+        return courseName;
+    }
 }
