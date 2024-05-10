@@ -14,7 +14,7 @@ class courseTests
 		
 		String output =  "Name: Beginner's Cardio. Description: Cardio class for starters. Date: March 22, 2024. Time: 15:30";
 		
-		Courses testCourse1 = new Courses(name, description, date, time);
+		Course testCourse1 = new Course(name, description, date, time);
 		
 		assertEquals(output, testCourse1.getInformation());
 	}

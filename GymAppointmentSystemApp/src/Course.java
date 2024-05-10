@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Courses
+public class Course
 {
 	private String courseName;
 	private String courseInfo;
@@ -12,11 +12,11 @@ public class Courses
 	private String courseInstructor;
 	
 	//Not used not sure if even needed
-	private ArrayList<Accounts> listOfAccounts = new ArrayList<Accounts>();
+	private ArrayList<Account> listOfAccounts = new ArrayList<Account>();
 	private int numOfMembers;
 	
 	//constructor
-	public Courses (String courseName, String courseInfo, String courseDate, String courseTime)
+	public Course (String courseName, String courseInfo, String courseDate, String courseTime)
 	{
 		this.courseName = courseName;
 		this.courseInfo = courseInfo;
