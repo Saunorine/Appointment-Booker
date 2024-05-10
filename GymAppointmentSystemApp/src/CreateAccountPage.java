@@ -7,12 +7,12 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class createAccountPage extends JFrame {
+public class CreateAccountPage extends JFrame {
     private JTextField usernameField;
     private JPasswordField passwordField;
     private ArrayList<Account> listOfAccounts; // Rename accounts to listOfAccounts
 
-    public createAccountPage(LoginMainScreen loginMainScreen, ArrayList<Account> listOfAccounts) {
+    public CreateAccountPage(LoginMainScreen loginMainScreen, ArrayList<Account> listOfAccounts) {
         super("Create Account");
 
         this.listOfAccounts = listOfAccounts; // Assign the passed listOfAccounts to this.listOfAccounts

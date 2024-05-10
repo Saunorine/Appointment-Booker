@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class courseTests
+class CourseTests
 {
 	//Tests getInformation and getInformation uses info from getters
 	@Test

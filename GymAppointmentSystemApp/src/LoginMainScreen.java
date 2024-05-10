@@ -16,7 +16,7 @@ public class LoginMainScreen extends JFrame
     private ArrayList<Account> listOfAccounts;
 
     public LoginMainScreen() {
-        super("Login");
+        super("Garduno's Gym App");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(750, 500);
@@ -52,7 +52,7 @@ public class LoginMainScreen extends JFrame
 
             if (loggedIn) {
                 // Open placeholder page if login is successful
-                new LoggedInPage(username).setVisible(true);
+                new LoggedInPage(username, password, this).setVisible(true);
                 dispose(); // Close login screen
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid username or password", "Error", JOptionPane.ERROR_MESSAGE);
@@ -61,7 +61,7 @@ public class LoginMainScreen extends JFrame
 
         createAccountButton.addActionListener(e -> {
             dispose(); // Close current login screen
-            new createAccountPage(this, listOfAccounts).setVisible(true);
+            new CreateAccountPage(this, listOfAccounts).setVisible(true);
         });
 
         add(panel);
