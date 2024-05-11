@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public class Accounts
+public class Account
 {
 	private String name;
 	private String password;
 	private String contactInfo;
 	private int numOfCourses;
 	
-	private ArrayList<Courses> coursesEnrolledIn = new ArrayList<Courses>();
+	private ArrayList<Course> coursesEnrolledIn = new ArrayList<Course>();
 	
-	public Accounts(String userName, String userPass, String info) {
+	public Account(String userName, String userPass) {
 		this.name = userName;
 		this.password = userPass;
-		this.contactInfo = info;
+		//this.contactInfo = info;
 	}
 	
 	public String getName() {
@@ -37,11 +37,11 @@ public class Accounts
 		return coursesEnrolledIn.toString();
 	}
 	
-	public void addCourse(Courses objectName) {
+	public void addCourse(Course objectName) {
 		coursesEnrolledIn.add(objectName);
 	}
 	
-	public void removeCourse(Courses objectName) {
+	public void removeCourse(Course objectName) {
 		coursesEnrolledIn.remove(objectName);
 	}
 	
