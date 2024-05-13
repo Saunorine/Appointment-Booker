@@ -49,3 +49,8 @@ Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts
 
 ## Week 5:
 Zhanhang is going to work on the GUI assignment and try to get the first 2-3 pages done with buttons that takes the user between each one. Fermin should write up the sorting methods for sorting courses by time/date/alphabetical etc. Continue looking for ways to implement learning outcomes.
+
+## Week 6:
+Need to finish up the rest of the project and add the other windows: course creation screen and some other ones.
+
+Need to add interfaces and other learning outcomes. File I/O for storing account info? just need something to work.
