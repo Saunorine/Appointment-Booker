@@ -58,8 +58,14 @@ public class Course
 		return listOfInfo;
 	}
 	
+	//commented out for now, need to override toString in order to print to Console over in the Sorter Class
+//	@Override
+//    public String toString() {
+//        return courseName;
+//    }
+	
 	@Override
     public String toString() {
-        return courseName;
+        return "Course Name: " + courseName + "\nDescription: " + courseInfo + "\nDate: " + courseDate + "nTime: " + courseTime;
     }
 }

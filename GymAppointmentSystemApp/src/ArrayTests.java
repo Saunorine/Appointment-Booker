@@ -11,7 +11,7 @@ class ArrayTests
 		String accName = "Fermin";
 		String accPassword = "mesa123";
 		String accContactInfo = "fermin@gmail.com";
-		Account testAccount1 = new Account(accName, accPassword, accContactInfo);
+		Account testAccount1 = new Account(accName, accPassword);
 		
 		//Create course
 		String courseName = "Beginner's Cardio";
