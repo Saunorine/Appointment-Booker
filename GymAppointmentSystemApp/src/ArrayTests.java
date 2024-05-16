@@ -1,6 +1,8 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 class ArrayTests
 {
@@ -16,15 +18,16 @@ class ArrayTests
 		//Create course
 		String courseName = "Beginner's Cardio";
 		String courseDescription = "Cardio class for starters";
-		String courseDate = "March 22, 2024";
-		String courseTime = "15:30";
+		LocalDate courseDate = LocalDate.parse("2024-03-22"); //YYYY-MM-DD
+		//1st argument represents the hour(between 0 and 23),2nd argument represents the minute(between 0 and 59)
+		LocalTime courseTime = LocalTime.of(15,30); //.of(hour, minute)  
 		Course testCourse1 = new Course(courseName, courseDescription, courseDate, courseTime);
 		
 		//Change to details of 2nd course
 		courseName = "Beginner's Cardio 2";
 		courseDescription = "Cardio class for starters";
-		courseDate = "March 25, 2024";
-		courseTime = "11:30";
+		courseDate = LocalDate.parse("2024-03-25");
+		courseTime = LocalTime.of(11,30);
 		
 		//Create course 2
 		Course testCourse2 = new Course(courseName, courseDescription, courseDate, courseTime);

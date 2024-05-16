@@ -1,11 +1,14 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Course
 {
 	private String courseName;
 	private String courseInfo;
-	private String courseDate;
-	private String courseTime;
+	private LocalDate courseDate;
+	private LocalTime courseTime;
 	private int maxOccupant;
 	
 	//Leave this in to use later
@@ -16,7 +19,7 @@ public class Course
 	private int numOfMembers;
 	
 	//constructor
-	public Course (String courseName, String courseInfo, String courseDate, String courseTime)
+	public Course (String courseName, String courseInfo, LocalDate courseDate, LocalTime courseTime)
 	{
 		this.courseName = courseName;
 		this.courseInfo = courseInfo;
@@ -35,12 +38,12 @@ public class Course
 		return courseInfo;
 	}
 	
-	public String getCourseDate()
+	public LocalDate getCourseDate()
 	{
 		return courseDate;
 	}
 	
-	public String getCourseTime()
+	public LocalTime getCourseTime()
 	{
 		return courseTime;
 	}
@@ -66,6 +69,8 @@ public class Course
 	
 	@Override
     public String toString() {
-        return "Course Name: " + courseName + "\nDescription: " + courseInfo + "\nDate: " + courseDate + "nTime: " + courseTime;
+		//formats the time so that when we print it, it will read as hour,minute, AM/PM
+		DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a");
+        return "Course Name: " + courseName + "\nDescription: " + courseInfo + "\nDate: " + courseDate + "nTime: " + timeFormatter.format(courseTime);
     }
 }
