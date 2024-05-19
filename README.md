@@ -6,6 +6,13 @@ Requirements
 LO Requirements
 Ideas
 Weekly Updates
+[Description and Purpose](https://github.com/Saunorine/Appointment-Booker#description)
+
+[Learning Outcomes and Requirements]([link](https://github.com/Saunorine/Appointment-Booker#requirements))
+
+[Ideas to Implement]([link](https://github.com/Saunorine/Appointment-Booker#ideas))
+
+[Weekly Updates](link)
 
 ## Description:
 Java application for the user to make appointments for predetermined courses with set times and dates.
@@ -15,13 +22,13 @@ Written and collaborated by Zhanhang Xiao (https://github.com/Saunorine) and Fer
 ### Purpose:
 A program that could schedule workout courses for a local gym. Add courses that could be written as a class with a course name, trainer name, date, time, intensity, and courseSize. Then user could use the interface to navigate courses and sort through them. Their information they logged in with would be then be added to the course member list for the staff to look at.
 
-### Requirements:
+## Requirements:
 1. A GUI that the gym member uses to login and select courses to sign up for
 2. Can sort available appointments by price/trainer etc
 3. Add new staff appointments
 4. Return errors if needed
 
-## Learning Outcome Requirements
+### Learning Outcome Requirements
   * Design principles of object-oriented programming ✓ - Created 2 objects that will work together to create the program
   * Single and multidimensional arrays ✓ - ArrayLists for Course and Accounts
   * Uses objects and classes in object-oriented programming (including aggregation?)
@@ -37,6 +44,7 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * send email notifying about the appointment after booking
   * GUI will be different depending on user or staff login
 
+### Weekly Updates
 ## Week 1:
 Do CRC cards for the project
 
