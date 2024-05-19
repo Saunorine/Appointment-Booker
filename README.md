@@ -1,11 +1,6 @@
 # Appointment-Booker
 ## Table of Contents
-Description
-Purpose
-Requirements
-LO Requirements
-Ideas
-Weekly Updates
+
 [Description and Purpose](https://github.com/Saunorine/Appointment-Booker#description)
 
 [Learning Outcomes and Requirements]([link](https://github.com/Saunorine/Appointment-Booker#requirements))
