@@ -1,4 +1,12 @@
 # Appointment-Booker
+## Table of Contents
+Description
+Purpose
+Requirements
+LO Requirements
+Ideas
+Weekly Updates
+
 ## Description:
 Java application for the user to make appointments for predetermined courses with set times and dates.
 
@@ -19,8 +27,8 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * Uses objects and classes in object-oriented programming (including aggregation?)
   * Inheritance and polymorphism, includin abstract classes and interfaces - Need abstract and interfaces, inheritance will be done with Swing/GUI
   * Generic collections and data structures ✓ - Using ArrayLists to hold objects of Courses for an Account object
-  * GUI utilizing event-driven programming
-  * Construct programs utilizing exception handling
+  * GUI utilizing event-driven programming ✓
+  * Construct programs utilizing exception handling ✓
   * Text File I/O
 
 ### Ideas:
