@@ -3,9 +3,9 @@
 
 [Description and Purpose](https://github.com/Saunorine/Appointment-Booker#description)
 
-[Learning Outcomes and Requirements]([link](https://github.com/Saunorine/Appointment-Booker#requirements))
+[Learning Outcomes and Requirements](https://github.com/Saunorine/Appointment-Booker#requirements)
 
-[Ideas to Implement]([link](https://github.com/Saunorine/Appointment-Booker#ideas))
+[Ideas to Implement](https://github.com/Saunorine/Appointment-Booker#ideas)
 
 [Weekly Updates](link)
 
