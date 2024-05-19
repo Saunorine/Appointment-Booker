@@ -7,7 +7,7 @@
 
 [Ideas to Implement](https://github.com/Saunorine/Appointment-Booker#ideas)
 
-[Weekly Updates](link)
+[Weekly Updates](https://github.com/Saunorine/Appointment-Booker#weekly-updates)
 
 ## Description:
 Java application for the user to make appointments for predetermined courses with set times and dates.
