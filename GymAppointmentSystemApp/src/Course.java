@@ -70,4 +70,9 @@ public class Course {
     public ArrayList<Account> getListOfAccounts() {
         return listOfAccounts;
     }
+
+	public String getInformation() {
+		
+		return "Name: " + courseName + ". Description: " + courseInfo + ". Date: " + courseDate.toString() + ". Time: " + courseTime.toString();
+	}
 }
