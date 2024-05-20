@@ -46,26 +46,28 @@ public class Course {
     }
 
     public void addMember(Account account) {
-        if (numOfMembers < maxOccupant) {
+        if (!listOfAccounts.contains(account) && numOfMembers < maxOccupant) {
             listOfAccounts.add(account);
             numOfMembers = listOfAccounts.size();
         } else {
-            throw new IllegalStateException("Course is full.");
+            throw new IllegalStateException("Course is full or member already enrolled.");
         }
     }
 
     public void removeMember(Account account) {
-        listOfAccounts.remove(account);
-        numOfMembers = listOfAccounts.size();
+        if (listOfAccounts.contains(account)) {
+            listOfAccounts.remove(account);
+            numOfMembers = listOfAccounts.size();
+        }
     }
-
-    public String getInformation() {
-        return "Name: " + courseName + ". Description: " + courseInfo + ". Date: " + courseDate + ". Time: " + courseTime + ". Enrolled: " + numOfMembers + "/" + maxOccupant;
-    }
-
+    
     @Override
     public String toString() {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a");
         return "Course Name: " + courseName + "\nDescription: " + courseInfo + "\nDate: " + courseDate + "\nTime: " + timeFormatter.format(courseTime) + "\nEnrolled: " + numOfMembers + "/" + maxOccupant;
+    }
+
+    public ArrayList<Account> getListOfAccounts() {
+        return listOfAccounts;
     }
 }

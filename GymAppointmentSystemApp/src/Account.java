@@ -43,13 +43,17 @@ public class Account {
     }
 
     public void addCourse(Course course) {
-        coursesEnrolledIn.add(course);
-        course.addMember(this);
+        if (!coursesEnrolledIn.contains(course)) {
+            coursesEnrolledIn.add(course);
+            course.addMember(this);
+        }
     }
 
     public void removeCourse(Course course) {
-        coursesEnrolledIn.remove(course);
-        course.removeMember(this);
+        if (coursesEnrolledIn.contains(course)) {
+            coursesEnrolledIn.remove(course);
+            course.removeMember(this);
+        }
     }
 
     public String getInformation() {

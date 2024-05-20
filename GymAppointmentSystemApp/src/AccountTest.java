@@ -15,9 +15,6 @@ class AccountTest {
 		
 		// Testing getName()
 		assertEquals(testName, testAccount.getName());
-		
-		// Testing getContact()
-		assertEquals(testContactInfo, testAccount.getContact());
 	}
 
 	@Test

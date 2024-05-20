@@ -43,9 +43,13 @@ public class StaffLoggedInPage extends JFrame {
                 int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete this course?", "Confirm Delete", JOptionPane.YES_NO_OPTION);
                 if (confirm == JOptionPane.YES_OPTION) {
                     Course selectedCourse = listOfCourses.get(selectedRow);
+                    // Make a copy of the list to avoid concurrent modification issues
+                    ArrayList<Account> enrolledAccounts = new ArrayList<>(selectedCourse.getListOfAccounts());
+                    for (Account enrolledAccount : enrolledAccounts) {
+                        enrolledAccount.removeCourse(selectedCourse);
+                    }
                     listOfCourses.remove(selectedCourse);
                     refreshCourses();
-                    selectedCourse = null;  // Dereference the course object
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Please select a course to delete.", "No Course Selected", JOptionPane.WARNING_MESSAGE);

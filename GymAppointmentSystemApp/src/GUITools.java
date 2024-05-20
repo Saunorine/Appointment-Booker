@@ -7,7 +7,7 @@ import java.util.Comparator;
 import javax.swing.table.DefaultTableModel;
 
 
-public class GUITools 
+public class GUITools
 {
 	//Sorters for GUI
 	public static void sortCoursesByName(ArrayList<Course> courses) {
