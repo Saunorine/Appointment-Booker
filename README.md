@@ -50,13 +50,15 @@ Look for ways to implements learning outcomes
 Plan out the inner workings
 
 ## Week 2:
-write course class, account/user info class, test cases
+Write course and account classes along with their methods and junit tests
 
 ## Week 3:
-Finish up writing the classes and junit tests.
+Finish up writing the classes and junit tests. Need to start looking at learning outcomes.
+
+A little behin on junit tests
 
 ## Week 4: 
-Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism. 
+Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism and other learning outcomes.
 
 ## Week 5:
 Zhanhang is going to work on the GUI assignment and try to get the first 2-3 pages done with buttons that takes the user between each one. Fermin should write up the sorting methods for sorting courses by time/date/alphabetical etc. Continue looking for ways to implement learning outcomes.
@@ -72,3 +74,5 @@ Got File I/O done, account/course/enrollment info is stored in text files and pr
 still no interfaces
 
 still need other stuff too
+
+Fermin is going to test it out since I wrote most of the code and designed it, a fresh pair of eyes should help find the bugs and kinks.
