@@ -66,7 +66,7 @@ Need to finish up the rest of the project and add the other windows: course crea
 
 Need to add interfaces and other learning outcomes. File I/O for storing account info? just need something to work.
 
-##Week 7
+## Week 7
 Got File I/O done, account/course/enrollment info is stored in text files and program saves to it when it closes and reads it when it opens back up.
 
 still no interfaces
