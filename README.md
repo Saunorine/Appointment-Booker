@@ -31,7 +31,7 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * Generic collections and data structures ✓ - Using ArrayLists to hold objects of Courses for an Account object
   * GUI utilizing event-driven programming ✓
   * Construct programs utilizing exception handling ✓
-  * Text File I/O
+  * Text File I/O ✓
 
 ### Ideas:
   * see if we can somehow integrate google calendar
@@ -65,3 +65,10 @@ Zhanhang is going to work on the GUI assignment and try to get the first 2-3 pag
 Need to finish up the rest of the project and add the other windows: course creation screen and some other ones.
 
 Need to add interfaces and other learning outcomes. File I/O for storing account info? just need something to work.
+
+##Week 7
+Got File I/O done, account/course/enrollment info is stored in text files and program saves to it when it closes and reads it when it opens back up.
+
+still no interfaces
+
+still need other stuff too
