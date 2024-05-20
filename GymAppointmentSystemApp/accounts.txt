@@ -1,3 +1,0 @@
-Tom,lakersFan77,false
-staff1,password1,true
-test1,passTest1,false
