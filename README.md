@@ -76,3 +76,6 @@ still no interfaces
 still need other stuff too
 
 Fermin is going to test it out since I wrote most of the code and designed it, a fresh pair of eyes should help find the bugs and kinks.
+
+## Week 8
+Last week, going to finally add abstract and subclasses for learning outcomes, everything else is already written and working so I just need to modify and keep it the same.
