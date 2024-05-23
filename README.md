@@ -55,8 +55,6 @@ Write course and account classes along with their methods and junit tests
 ### Week 3:
 Finish up writing the classes and junit tests. Need to start looking at learning outcomes.
 
-A little behin on junit tests
-
 ### Week 4: 
 Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism and other learning outcomes.
 
@@ -64,9 +62,7 @@ Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts
 Zhanhang is going to work on the GUI assignment and try to get the first 2-3 pages done with buttons that takes the user between each one. Fermin should write up the sorting methods for sorting courses by time/date/alphabetical etc. Continue looking for ways to implement learning outcomes.
 
 ### Week 6:
-Need to finish up the rest of the project and add the other windows: course creation screen and some other ones.
-
-Need to add interfaces and other learning outcomes. File I/O for storing account info? just need something to work.
+Finished adding the first few windows and a placeholder for later uses
 
 ### Week 7
 Got File I/O done, account/course/enrollment info is stored in text files and program saves to it when it closes and reads it when it opens back up.
@@ -80,4 +76,4 @@ Fermin is going to test it out since I wrote most of the code and designed it, a
 ## Week 8
 Last week, going to finally add abstract and subclasses for learning outcomes, everything else is already written and working so I just need to modify and keep it the same.
 
-Final update on May 23, 2024 got the abstract and subclasses up. fixed some parts of the program not using GUITools and finished commenting everything
+Final update on May 23, 2024 got the abstract and subclasses up. fixed some parts of the program not using GUITools and finished commenting everything. Should be bug free? I hope.
