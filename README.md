@@ -24,10 +24,10 @@ A program that could schedule workout courses for a local gym. Add courses that 
 4. Return errors if needed
 
 ### Learning Outcome Requirements
-  * Design principles of object-oriented programming ✓ - Created 2 objects that will work together to create the program
+  * Design principles of object-oriented programming ✓ - Created 2 objects that will work together to work the program
   * Single and multidimensional arrays ✓ - ArrayLists for Course and Accounts
   * Uses objects and classes in object ✓
-  * Inheritance and polymorphism, including abstract classes and interfaces - STILL NEED THIS
+  * Inheritance and polymorphism, including abstract classes and interfaces ✓
   * Generic collections and data structures ✓ - Using ArrayLists to hold objects of Courses for an Account object
   * GUI utilizing event-driven programming ✓
   * Construct programs utilizing exception handling ✓
@@ -39,8 +39,8 @@ A program that could schedule workout courses for a local gym. Add courses that 
   * send email notifying about the appointment after booking
   * GUI will be different depending on user or staff login
 
-### Weekly Updates
-## Week 1:
+## Weekly Updates
+### Week 1:
 Do CRC cards for the project
 
 List requirements
@@ -49,26 +49,26 @@ Look for ways to implements learning outcomes
 
 Plan out the inner workings
 
-## Week 2:
+### Week 2:
 Write course and account classes along with their methods and junit tests
 
-## Week 3:
+### Week 3:
 Finish up writing the classes and junit tests. Need to start looking at learning outcomes.
 
 A little behin on junit tests
 
-## Week 4: 
+### Week 4: 
 Write up JUnit Tests and polish up classes. Look over Accounts and staffAccounts class and see how else we can implement polymorphism and other learning outcomes.
 
-## Week 5:
+### Week 5:
 Zhanhang is going to work on the GUI assignment and try to get the first 2-3 pages done with buttons that takes the user between each one. Fermin should write up the sorting methods for sorting courses by time/date/alphabetical etc. Continue looking for ways to implement learning outcomes.
 
-## Week 6:
+### Week 6:
 Need to finish up the rest of the project and add the other windows: course creation screen and some other ones.
 
 Need to add interfaces and other learning outcomes. File I/O for storing account info? just need something to work.
 
-## Week 7
+### Week 7
 Got File I/O done, account/course/enrollment info is stored in text files and program saves to it when it closes and reads it when it opens back up.
 
 still no interfaces
@@ -79,3 +79,5 @@ Fermin is going to test it out since I wrote most of the code and designed it, a
 
 ## Week 8
 Last week, going to finally add abstract and subclasses for learning outcomes, everything else is already written and working so I just need to modify and keep it the same.
+
+Final update on May 23, 2024 got the abstract and subclasses up. fixed some parts of the program not using GUITools and finished commenting everything
